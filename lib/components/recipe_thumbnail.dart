@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'package:fooderlich/models/models.dart';
+import '../models/models.dart';
 
 class RecipeThumbnail extends StatelessWidget {
   final SimpleRecipe recipe;
 
-  const RecipeThumbnail({Key? key, required this.recipe}) : super(key: key);
+  const RecipeThumbnail({
+    Key? key,
+    required this.recipe,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +26,7 @@ class RecipeThumbnail extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          const SizedBox(height: 10),
           Text(
             recipe.title,
             maxLines: 1,
