@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fooderlich/screens/grocery_screen.dart';
 import 'package:provider/provider.dart';
 import 'models/models.dart';
+import 'models/tab_manager.dart';
 import 'screens/explore_screen.dart';
 import 'screens/recipes_screen.dart';
 
